@@ -28,7 +28,7 @@ func TestAccAzureRMServiceBusTopicAuthorizationRule_manage(t *testing.T) {
 }
 
 func testAccAzureRMServiceBusTopicAuthorizationRule(t *testing.T, listen, send, manage bool) {
-	resourceName := "azurerm_servicebus_namespace_authorization_rule.test"
+	resourceName := "azurerm_servicebus_topic_authorization_rule.test"
 
 	resource.Test(t, resource.TestCase{
 		PreCheck:     func() { testAccPreCheck(t) },
